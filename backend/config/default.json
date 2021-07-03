@@ -1,0 +1,28 @@
+{
+  "root": {
+    "env": "dev",
+    "aws": {
+      "region": "eu-west-1",
+      "ses": {
+        "address": "birukov.aleksandr48@gmail.com"
+      }
+    },
+    "db": {
+      "type": "postgres",
+      "username": "postgres",
+      "password": "password",
+      "database": "remrise",
+      "host": "localhost",
+      "migrationsRun": true,
+      "port": 5432,
+      "migrationsTableName": "applied_migration",
+      "migrations": ["./dist/**/migration/*.js"],
+      "cli": {
+        "migrationsDir": "./src/db/migration"
+      },
+      "entities": ["./**/*.model.js"],
+      "synchronize": false,
+      "logging": false
+    }
+  }
+}

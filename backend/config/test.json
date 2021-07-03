@@ -1,0 +1,17 @@
+{
+  "root": {
+    "env": "test",
+    "db": {
+      "type": "postgres",
+      "synchronize": true,
+      "logging": false,
+      "username": "postgres",
+      "password": "password",
+      "database": "remrise",
+      "host": "localhost",
+      "entities": ["./**/*.model.ts"],
+      "migrationsRun": false,
+      "port": 5433
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# IDE
+.idea
+.vscode/
+
+node_modules/
+dist/
+coverage/
+
+.next/
+frontend/.env
+backend/static
